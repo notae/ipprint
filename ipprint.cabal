@@ -7,7 +7,7 @@ License:        BSD3
 License-file:   LICENSE
 Author:         Gleb Alexeyev
 Maintainer:     gleb.alexeev@gmail.com
-Synopsis:       Tiny helper for pretty-printing values in ghci console
+Synopsis:       Tiny helper for pretty-printing values in ghci console (variant)
 Description:    Tiny helper for pretty-printing values in ghci console
                 .
                 Usage example:
@@ -26,7 +26,7 @@ Library
     Build-Depends:  base, haskell-src
     Exposed-modules:
         IPPrint
-    Build-Depends: base >= 2 && <= 5, Extra >= 1.33 && < 1.50
+    Build-Depends: base >= 2 && <= 5
 
 Source-repository head
   type:              git

@@ -1,6 +1,5 @@
-module IPPrint(pshow, pshowWidth, pprint, pprintWidth) where
+module IPPrint(pshow, pshowWidth, pprintWidth) where
 
-import Extra.Terminal (getWidth)
 import Language.Haskell.Parser
 import Language.Haskell.Pretty
 import Text.Read
@@ -25,12 +24,6 @@ pshowWidth width v =
 
 pprintWidth :: Show a => Int -> a -> IO ()
 pprintWidth width = putStrLn . pshowWidth width
-
-pprint :: Show a => a -> IO ()
-pprint v = do
-    mw <- getWidth
-    let width = maybe defaultLineWidth id mw
-    pprintWidth width v
 
 skipBoring :: ReadPrec ()
 skipBoring =
