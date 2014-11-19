@@ -1,14 +1,14 @@
-Name:           ipprint
+Name:           ipprint-lite
 Cabal-version:  >= 1.6
 Build-type:     Simple
 Category:       Text
-Version:        0.5
+Version:        0.5.1
 License:        BSD3
 License-file:   LICENSE
 Author:         Gleb Alexeyev
-Maintainer:     gleb.alexeev@gmail.com
-Synopsis:       Tiny helper for pretty-printing values in ghci console (variant)
-Description:    Tiny helper for pretty-printing values in ghci console
+Maintainer:     notae@me.com
+Synopsis:       Tiny helper for pretty-printing values in ghci console (lite)
+Description:    Tiny helper for pretty-printing values in ghci console (lite)
                 .
                 Usage example:
                 .                
@@ -21,14 +21,15 @@ Description:    Tiny helper for pretty-printing values in ghci console
                 >    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],                
                 >    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]]
                 .
-                Terminal width support added by Jean-Marie Gaillourdet. 
+                Terminal width support added by Jean-Marie Gaillourdet.
+                Disabled some function to reduce dependency by notae.
 Library
     Build-Depends:  base, haskell-src
     Exposed-modules:
-        IPPrint
+        IPPrint.Lite
     Build-Depends: base >= 2 && <= 5
 
 Source-repository head
   type:              git
-  location:          https://github.com/alexeevg/ipprint.git
+  location:          https://github.com/notae/ipprint.git
 

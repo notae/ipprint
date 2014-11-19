@@ -1,4 +1,4 @@
-module IPPrint(pshow, pshowWidth, pprintWidth) where
+module IPPrint.Lite (pshow, pshowWidth, pprintWidth) where
 
 import Language.Haskell.Parser
 import Language.Haskell.Pretty
